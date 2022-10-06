@@ -1,6 +1,8 @@
 :root {
   --font-primary: 'Manrope', sans-serif;
-  --color-heading: hsl(217.1, 19.1%, 34.9%);
+  --color-primary: hsl(217.1, 19.1%, 34.9%);
+  --color-bg: hsl(210, 46.2%, 94.9%);
+  --color-pure-white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -36,7 +38,7 @@ ol {
 
 body {
   font-family: var(--font-primary);
-  background-color: hsl(210, 46.2%, 94.9%);
+  background-color: var(--color-bg);
 }
 
 .wrapper {
@@ -47,9 +49,9 @@ body {
 }
 
 .card {
-  width: 327px;
-  min-height: 504px;
-  background: hsl(0, 0%, 100%);
+  width: 20.4375rem;
+  min-height: 31.5rem;
+  background: var(--color-pure-white);
   box-shadow: 0px 40px 40px -10px hsla(210, 28.6%, 83.5%, 0.5);
   border-radius: 10px;
 }
@@ -67,16 +69,16 @@ body {
 .content h1 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: var(--color-heading);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+  color: var(--color-primary);
 }
 
 .content p {
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.121875px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0076rem;
   color: hsl(214.3, 16.9%, 51.4%);
 }
 
@@ -86,7 +88,7 @@ footer {
   align-items: center;
   margin-top: 20px;
   padding: 0 32px;
-  height: 69px;
+  height: 4.3125rem;
 }
 
 .author {
@@ -102,16 +104,16 @@ footer {
 }
 
 .author-details h2 {
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.121875px;
-  color: var(--color-heading);
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0076rem;
+  color: var(--color-primary);
 }
 
 .author-details p {
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.121875px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0076rem;
   color: hsl(212.4, 23.3%, 68.8%);
 }
 
@@ -121,13 +123,13 @@ footer {
   align-items: center;
   width: 32px;
   height: 32px;
-  background: hsl(210, 46.2%, 94.9%);
+  background: var(--color-bg);
   border-radius: 50%;
   cursor: pointer;
 }
 
 footer.mobile-share {
-  background: hsl(217.1, 19.1%, 34.9%);
+  background: var(--color-primary);
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -178,9 +180,9 @@ footer.mobile-share {
 
 .share h2 {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 5px;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.3125rem;
   color: hsl(212.4, 23.3%, 68.8%);
   text-transform: uppercase;
 }
@@ -200,7 +202,7 @@ footer.desktop-share button {
 
 footer.mobile-share path,
 footer.desktop-share path {
-  fill: hsl(0, 0%, 100%);
+  fill: var(--color-pure-white);
 }
 
 .tooltip {
@@ -214,8 +216,8 @@ footer.desktop-share path {
     grid-template-areas:
       "picture content"
       "picture footer";
-    width: 730px;
-    height: 280px;
+    width: 45.625rem;
+    height: 17.5rem;
     min-height: unset;
   }
 
@@ -233,19 +235,19 @@ footer.desktop-share path {
 
   .content {
     grid-area: content;
-    max-width: 445px;
+    max-width: 27.8125rem;
     padding: 32px 40px 0;
   }
 
   .content h1 {
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.25px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.0156rem;
   }
 
   footer {
     grid-area: footer;
-    max-width: 445px;
+    max-width: 27.8125rem;
     margin-top: auto;
     padding: 0 40px 28px;
     height: unset;
@@ -257,13 +259,13 @@ footer.desktop-share path {
 
   .tooltip {
     justify-content: center;
-    width: 248px;
-    height: 55px;
+    width: 15.5rem;
+    height: 3.4375rem;
     top: -77px;
     right: -68px;
     border-radius: 10px;
     box-shadow: 0px 10px 10px hsla(210, 28.6%, 83.5%, 0.5);
-    background: hsl(217.1, 19.1%, 34.9%);
+    background: var(--color-primary);
   }
 
   .tooltip::after {
@@ -274,7 +276,7 @@ footer.desktop-share path {
     right: auto;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 12px solid hsl(217.1, 19.1%, 34.9%);
+    border-top: 12px solid var(--color-primary);
   }
 
   @keyframes fadeUp {
