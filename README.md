@@ -17,7 +17,9 @@ Thanks for checking out this front-end coding challenge.
 
 - HTML
 - CSS
+- JS
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 ## Useful resources
